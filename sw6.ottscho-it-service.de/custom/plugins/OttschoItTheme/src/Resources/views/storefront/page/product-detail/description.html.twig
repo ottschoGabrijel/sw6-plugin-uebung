@@ -1,0 +1,15 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/description.html.twig' %}
+
+ {% block page_product_detail_description_content_text %}
+     <div class="product-detail-description-text"
+          itemprop="description">
+         {{ page.product.translated.description|raw }}
+     </div>
+    <div>
+        {{ page.product.customFields["migration_Ottscho-ITSW5_product_attr7"]|raw }}
+    </div>
+
+
+
+
+ {% endblock %}
